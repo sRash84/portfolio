@@ -1,0 +1,379 @@
+/*@import url('https://fonts.googleapis.com/css?family=Roboto:100');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:700|Roboto:100');*/
+
+/*
+	font-family: 'Yrsa', serif;
+	font-family: 'Roboto', sans-serif;
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*end - reset css*/
+
+body{
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.2em;
+}
+
+h1, h2, h3{
+	font-weight: bold;
+	padding:15px 0;
+}
+
+.hero{
+	position: absolute;
+	width:1140px;
+	top:60%;
+	left:50%;
+	transform: translate(-50%, -50%);
+}
+
+header{
+	background-color: #d66b6b;
+	background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),  url("../images/banner-.png");
+	/*height:100vh;*/
+	background-position: center;
+	background-size: cover;
+	background-repeat: none;
+	position: relative;
+	min-height: 420px;
+}
+
+.hero h1{
+	color:white;
+	padding: 25px 0px;
+	text-transform: uppercase;
+	font-size: 25px;
+	font-weight: 700;
+	line-height: 40px;
+
+}
+
+.round-border{
+	border: 1px solid #ffffff;
+	border-radius: 5px;
+}
+.navbar{
+	margin-bottom: 0;
+	border-radius: 0;	
+	/*background-color: #1abc9c; */
+	background-color: transparent;
+	color:#323232;
+	padding:1% 0;
+	font-size:1.2em;
+	border:0;
+}
+
+.navbar-brand{
+	float:left;
+	min-height: 55px;
+	padding:0 15px 5px;
+}
+.navbar-brand img{
+	max-height: 100%;
+}
+
+.navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus, .navbar-inverse .navbar-nav .active a:hover{
+	color:#ffffff;
+	/*background-color: #1abc9c; */
+	background-color: transparent; 
+} 
+.navbar-inverse .navbar-nav li a{
+	color:#d5d5d5;
+}
+
+.center{
+	margin:10px auto;
+	
+}
+
+.center img{
+	max-height:100%;
+	max-width:100%;
+}
+
+.carousel-caption {
+	top:50%;
+	transform:translateY(-50%);
+	text-transform: uppercase;
+}
+.top-padding{
+	padding-top: 10px;
+	margin-top: 10px;
+}
+
+.top-btm-padding{
+	padding:35px 0;
+}
+
+/**/
+.bg-1 { 
+      background-color: #1abc9c; /* Green */
+      /*background-image: url("../images/banner-.png");*/
+       min-height: 480px;
+      
+  }
+
+  .bgimg{
+  	background-image: url("../images/banner-.png");
+  	background-position: center;
+      background-size: cover;
+      color: #ffffff;
+      min-height: 420px;
+  }
+
+.banner{
+	background-color: #3eadbf;
+	background-image: url("../images/banner-.png");
+	height:70%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	min-height: 420px;
+}
+
+.inner-container{
+	text-align: center;
+	position: absolute;
+	width: 100%;
+	height:auto;
+	/*margin-top: 200px;*/
+}
+
+
+.parallax{
+	 /* The image used */
+	position:relative;
+    background-image: url("../images/parallax2.jpg");
+     /* Set a specific height */
+    min-height: 250px;
+    
+    width:100%; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax-text{
+	font-size:150%;
+	color:#ffffff;
+	font-weight: bold;
+	font-family: 'Roboto Slab', serif;
+}
+.parallax-smalltext{
+	font-size:100%;
+	color:#ffffff;
+	font-weight: 500;
+}
+
+.thumbnail{
+	border-radius: 0;
+}
+.thumbnail:hover {
+   border-color: #13dd80;
+}
+
+.team-man{
+	position: absolute;
+	left:50%;
+	margin-left:-50px;
+	top:-50px;
+	overflow: hidden;
+	min-heigth:100px;
+	min-width: 100px;
+	height:100px;
+	width:100px;
+	border:3px solid #1abc9c;
+	border-radius: 50%;
+}
+
+.team-man img{
+	width:100%;
+	height:100%;
+	min-height: 100%
+	min-width:100%;
+	border-radius: 50%;
+}
+
+.team-block h3{
+	color:#ffffff;
+	font-size:120%;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding-top: 70px;
+	margin-bottom: 5px;
+}
+.team-block span{
+	color:#f5f5f5;
+	font-size: 16px;
+	text-transform: uppercase;
+	letter-spacing: 0.025em;
+}
+
+.team-block p{
+	color:#f5f5f5;
+	font-size: 16px;
+	padding:25px 15px;
+	line-height: 24px;
+	font-weight: 800;
+}
+.team-description{
+	background-color: #1abc9c;
+}
+.team-social-network{
+	padding-bottom: 15px;
+}
+
+.team-social-network a{
+	margin: 0 10px;
+}
+
+.team-social-network i{
+	height:40px;
+	width:40px;
+	background:#ffffff;
+	text-align: center;
+	border-radius: 50%;
+	border:3px solid #1abc9c;
+	padding-top: 10px;
+}
+
+/*contact us form*/
+
+
+
+/*end of contact us*/
+
+/*benefits*/
+.servicebox{
+	padding: 20px 25px;
+	border-radius: 5px;
+	text-align: left;
+	overflow: hidden;
+	z-index:1;
+	position: relative;
+}
+
+.servicebox:before{
+	content:"";
+	width:100%;
+	height:100%;
+	border-radius: 5px;
+	background: #242424;
+	position: absolute;
+	top:0;
+	left:-100%;
+	z-index:-1;
+	transition: all 0.5s ease 0s;
+}
+.servicebox:hover:before{
+	left:0;
+}
+
+.servicebox:after{
+	content:"";
+	width:7px;
+	height:0;
+	border-radius: 5px;
+	background:orange;
+	position:absolute;
+	top:0;
+	left:0;
+	transition: all 0.5s ease 0s;
+}
+.servicebox:hover:after{
+	height:100%;
+}
+
+.servicebox  .service-icon{
+	color:#414243;
+	margin-bottom:10px;
+	transition: all 0.5s ease 0s;	
+}
+
+.servicebox  .service-icon i{
+	font-size:30px;
+}
+
+.servicebox .title{
+	display:inline-block;
+	font-size:22px;
+	font-weight:700px;
+	text-transform: uppercase;
+	margin-right:10px;
+	text-align: left;
+}
+
+.servicebox .description{
+	font-size:15px;
+	color:#777;
+	line-height: 25px;
+	transition: all 0.5s ease 0s;
+}
+
+.servicebox:hover .service-icon,
+.servicebox:hover .description{
+	color:white;
+}
+
+/*end*/
+
+footer {
+	background-color: #f2f2f2;
+	padding: 25px;
+}
+
+@media (max-width:600px){
+	.carousel-caption{
+		display: none;
+	}
+}

@@ -1,0 +1,776 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*end - reset css*/
+
+/*General Styles*/
+body{
+	background-color: #ffffff;
+	color:#444444;
+	font-family: "Open Sans", sans-serif;
+}
+
+a {
+  color: #50d8af;
+  transition: 0.5s;
+}
+
+a:hover, a:active, a:focus {
+  color: #51d8af;
+  outline: none;
+  text-decoration: none;
+}
+
+p {
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+*{box-sizing: border-box;}
+/*End of general styles*/
+
+/*Navigation Bar*/
+
+
+.navbar{
+	background-color: #0c2e8a;
+	border-radius: 0px;
+	border:none;
+	padding: 15px 0px;
+}
+
+.navbar .logo-text{
+	background: none;
+	padding:0px;
+}
+
+.navbar-brand {
+    padding: 0px 15px;
+       
+}
+
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #ffffff;
+}
+
+.navbar-inverse .navbar-nav li a:hover{
+	color:#50d8af;
+}
+.navbar-inverse .navbar-nav .active a,
+.navbar-inverse .navbar-nav .active a:focus, 
+.navbar-inverse .navbar-nav .active a:hover{
+	color:#50d8af;
+	background-color: transparent; 
+}
+
+.navbar-inverse .navbar-brand {
+    color: #50d8af;
+}
+
+.navbar {
+    margin-bottom: 0px;
+}
+
+.text-decor{
+    font-size: 37px;
+    font-weight: 900;
+    letter-spacing: 7px;
+    margin-left: 8px;
+}
+
+/*End of Navigation bar*/
+
+/*banner*/
+#banner {
+  width: 100%;
+  height: 60vh;
+  position: relative;
+  /*background: url("../images/intro-carousel/2.jpg") no-repeat;*/
+  background-size: cover;
+  background-position: 0 0px;
+  background-color: rgba(0,0,0,0.7);
+}
+
+#banner:before{
+	content: "";
+  	position: absolute;
+  	left: 0; 
+  	right: 0;
+  	top: 0; 
+  	bottom: 0;
+	background: rgba(29, 33, 31, 0.5);
+}
+
+#banner .intro-content {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#banner .intro-content h2 {
+  /*color: #0c2e8a;*/
+  color:#ffffff;
+  margin-bottom: 30px;
+  font-size: 64px;
+  font-weight: 700;
+}
+
+#banner .intro-content h2 span {
+  color: #50d8af;
+  text-decoration: underline;
+}
+
+#banner .intro-content .btn-get-started, #banner .intro-content .btn-projects {
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 2px;
+  transition: 0.5s;
+  margin: 10px;
+  color: #fff;
+}
+
+#banner .intro-content .btn-get-started {
+  background: #0c2e8a;
+  border: 2px solid #0c2e8a;
+}
+
+#banner .intro-content .btn-get-started:hover {
+  background: none;
+  color: #0c2e8a;
+  color:#ffffff;
+  border: 2px solid #ffffff;
+}
+
+#banner .intro-content .btn-projects {
+  background: #50d8af;
+  border: 2px solid #50d8af;
+}
+
+#banner .intro-content .btn-projects:hover {
+  background: none;
+  /*color: #50d8af;*/
+  color:#ffffff;
+  border: 2px solid #ffffff;
+
+}
+.home-img{
+    background: url("../images/intro-carousel/2.jpg") no-repeat;
+}
+
+.graphic-img{
+    background: url("../images/intro-carousel/multimedia.jpg") no-repeat;
+}
+
+.webdesign-img{
+    background: url("../images/intro-carousel/webdesign.jpg") no-repeat;
+}
+
+/*end of banner*/
+
+/*section about-me*/
+#about-me{
+	padding: 60px 0 30px 0;
+}
+
+#about-me h2{
+	font-size:44px;
+	font-weight: bold;
+	color:#0c2e8a;
+}
+
+#about-me p{
+	font-size:24px;
+	font-weight: 300;
+	color:#0c2e8a;
+}
+
+#about-me ul li{
+	margin:5px 0px;
+	padding:5px 0px;
+	font-weight: 500;
+	line-height: 20px;
+	letter-spacing: 3px;	
+}
+
+#about-me ul li.ht{
+	background-color: #c6e49e;
+}
+#about-me ul li.cs{
+	background-color: #53d2d2;
+}
+#about-me ul li.ps{
+	background-color: #e4afff;
+}
+
+#about-me strong{
+	padding: 10px;
+	font-weight: bold;
+	color:#50d8af;
+}
+
+.top-margin{
+	margin-top: 10px;
+	padding-top: 10px
+}
+/*end of about-me*/
+
+
+/*section strengths*/
+
+#strengths {
+  margin-bottom: 30px;
+}
+.section-header h2{
+	text-transform: uppercase;
+	font-size: 30px;
+	position: relative;
+	padding-bottom: 10px;
+}
+
+.section-header h2::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #50d8af;
+  bottom: 0;
+  left: 0;
+}
+.section-header p{
+	font-size:24px;
+	font-weight: 300;
+	color:#000000;
+	line-height: 40px;
+
+}
+
+
+/*strengths*/
+
+/*live projects*/
+
+#live-projects{
+	padding: 60px 0 30px 0;
+}
+#live-projects img{
+	width:100%;
+	position: relative;
+}
+
+.project-overview{
+	position: absolute;
+	top:0;
+	bottom:0;
+}
+
+.project-overview h2{
+    font-size: 44px;
+    font-weight: 500;
+    color: #0c2e8a;
+}
+
+.project-overview p{
+	font-size: 24px;
+    font-weight: 300;
+    color: #0c2e8a;
+    line-height: 40px;
+}
+
+.btn-case{
+    color: #fff;
+    background-color: #50d8af;
+}
+/*End of live projects*/
+
+
+/*mywork*/
+
+#mywork{
+	padding: 60px 0 30px 0;
+}
+
+#mywork img{
+	display: block;
+	width:100%;
+	vertical-align: bottom;
+}
+
+
+.img-box{
+	position: relative;
+    height: 362px;
+    overflow: hidden;
+}
+
+.overlay {
+	position: absolute; 
+	bottom: 0; 
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.5); /* Black see-through */
+	color: #f1f1f1; 
+	width: 100%;
+	transition: .5s ease;
+	opacity:0;
+	color: white;
+	font-size: 20px;
+	padding: 20px;
+	text-align: center;
+}
+
+.img-box:hover .overlay {
+  opacity: 1;
+}
+.modal-header{
+    background-color:#50d8af;
+    color: #ffffff;
+    
+}
+
+.modal-title{
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px
+    font-weight: 700;
+}
+.banner-two{
+    margin-top: 10px;
+}
+/*End of mywork*/
+
+/*contact*/
+#contact{
+	padding: 60px 0 30px 0;
+}
+
+#contact i{
+	font-size:48px;
+	color:#50d8af;
+}
+
+#contact h3{
+	margin: 15px 0;
+}
+
+ #contact .contact-phone {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+  }
+
+#contact .form #sendmessage {
+  color: #50d8af;
+  border: 1px solid #50d8af;
+  display: none;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+#contact .form #errormessage {
+  color: red;
+  display: none;
+  border: 1px solid red;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+#contact .form #sendmessage.show, #contact .form #errormessage.show, #contact .form .show {
+  display: block;
+}
+
+#contact .form .validation {
+  color: red;
+  display: none;
+  margin: 0 0 20px;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+#contact .form input, #contact .form textarea {
+  padding: 10px 14px;
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 15px;
+}
+
+#contact .form button[type="submit"] {
+  background: #50d8af;
+  border: 0;
+  border-radius: 3px;
+  padding: 10px 30px;
+  color: #fff;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+#contact .form button[type="submit"]:hover {
+  background: #2dc899;
+}
+
+/*end of contact*/
+
+/*portfolio*/
+
+.portfolio{
+    position: relative;
+    width:48%;
+    height:400px;
+    overflow: hidden;
+    border:1px solid;
+    margin-right: 23px;
+    padding:0;
+}
+
+.image{
+    width: 100%;
+    height: auto;
+}
+.over-lay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(12, 46, 138, 0.86);
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  -webkit-transform:scale(0);
+  transition: .3s ease;
+}
+.portfolio:hover .over-lay {
+  transform: scale(1)
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.btn-vmore{
+    color:#000000;
+    background-color: #ffffff;
+}
+
+/*end */
+
+/*myworks old to new*/
+    .proj-overview{
+        margin-top: 5%;
+        background-color: #eeeef1;
+        padding: 30px 0px;
+    }
+
+    #web-screen .container{
+        max-height: 320px;
+        height: 320px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            padding: 0px;
+    }
+
+    #web-screen{
+        font-family: "Open Sans", sans-serif;
+        margin-top: 4%;
+    }
+
+    .oldweb{
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 35px;
+    }
+
+    .oldweb h1{
+        margin: 35px 0px;
+        font-size: 250%;
+        color: #50d8af;
+        font-weight: bolder;
+    }
+
+    .oldweb h3{
+        font-size: 170%;
+        font-weight: 400;
+        color: #0c2e8a;
+    }
+
+/*end of old to new*/
+
+/*mywork - business goals*/
+    #business-goal{
+        margin-top:0; 
+    }
+
+    #business-goal .container{
+        background-color: #f77358;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        padding: 10px;
+    }
+
+    #low-fidelity{
+        margin-top: 2%;
+    }
+
+    .tab-content{
+        margin-top: 25px;
+    }
+
+    .tab-content img{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+/*end of business goals*/
+
+/*style guide*/
+#style-guide{
+    margin-top: 30px;
+}
+
+.color-one{
+    height:35px;
+    background-color: #065cbd;
+    border-radius: 25px;
+}
+
+.color-two{
+    height:35px;
+    background-color: #3a3e3b;
+    border-radius: 25px;
+}
+
+.color-018344{
+    height:35px;
+    background-color: #018344;
+    border-radius: 25px;
+}
+
+.color-d7d7d7{
+    height:35px;
+    background-color: #d7d7d7;
+    border-radius: 25px;
+}   
+
+.color-363936{
+    height:35px;
+    background-color: #363936;
+    border-radius: 25px;
+}
+
+.color-1dc8cd{
+    height:35px;
+    background-color: #979e0e;
+    border-radius: 25px;
+}
+
+/*.color-0d133a{
+    height:35px;
+    background-color: #0d133a;
+    border-radius: 25px;
+}*/
+
+.color-eff368{
+    height:35px;
+    /*background-color: #eff368;*/
+    border-radius: 25px;
+}
+#style-guide h1{
+    padding:10px 0px;
+}
+
+#hfmobile, #mobile{
+    width: 33%;
+    margin: 0 auto;
+}
+
+#hfweb, #web, #uflow, #ujrny, #cardsorting{
+    width: 75%;
+    margin: 0 auto;
+}
+
+/*.top-margin-15{
+    margin-top: 15px;
+}*/
+/*end of style guide*/
+
+/*live project*/
+.proj-overview p{
+    font-size: 24px;
+    font-weight: 300;
+    color: #0c2e8a;
+    line-height: 40px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+}
+
+.card img{
+    padding: 22px 48px;
+}
+
+
+.title {
+    color: grey;
+    font-size: 18px;
+}
+
+#appdesigns .portfolio{
+    width: 25%;
+    height: 569px;
+}
+
+#userflow{
+    margin-top: 30px;
+}
+#userflow img{
+    width: 75%;
+    margin: 0 auto;
+}   
+
+.card button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+
+.card button:hover, a:hover {
+    opacity: 0.7;
+}
+
+
+#architecture .container{
+  width:80%;
+}
+
+#architecture img{
+  width: 75%;
+  margin:0 auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/*end of live project*/
+
+@media (max-width:600px){
+    .portfolio {
+        width: 100%;
+        margin-bottom: 23px;
+        height:auto;
+    }
+
+    .project-overview {
+        position: static; 
+    }
+
+    #banner .intro-content h2 {
+        font-size: 56px;
+    }
+
+    .oldweb h1 {
+        font-size: 200%;
+    }
+
+    .oldweb h3 {
+        font-size: 145%;
+    }
+
+    #appdesigns .portfolio {
+        width: 100%;
+        /* height: 569px; */
+        height:auto;
+    }
+
+}
+
+@media (max-width:1080px){
+    #appdesigns .portfolio {
+      width: 100%;
+      /* height: 569px; */
+      height: auto;
+      border: none;
+    }
+}

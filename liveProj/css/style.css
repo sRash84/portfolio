@@ -1,0 +1,783 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Open+Sans:300,300i,400,400i,700,700i,800,800i|Raleway:300,400,500,700,800|Dancing+Script:400,700');
+
+/*
+	font-family: 'Open Sans', sans-serif;
+	font-family: 'Raleway', sans-serif;
+	font-family: 'Montserrat', sans-serif;
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*end - reset css*/
+
+body{
+	font-family: "Open Sans", sans-serif;
+	font-size: 1.2em;
+}
+
+h1, h2, h3{
+	font-weight: bold;
+	padding:40px 0;
+}
+.navbar{
+	margin-bottom: 0;
+	border-radius: 0;	
+	background-color:#979e0e; 
+	color:#323232;
+	padding:1% 0;
+	font-size:1.2em;
+	border:0;
+}
+.nav{
+	    padding: 5px 15px;
+}
+.navbar-brand{
+	/*float:left;
+	min-height: 55px;
+	padding:0 15px 5px;*/
+	color:#ffffff;
+	padding: 0px;
+}
+.navbar-brand img{
+	max-width: 290px;
+    margin-left: 10px;
+    width:100%;
+}
+
+.brand-text {
+	font-family: 'Dancing Script', cursive;
+	font-size: 200%;
+	font-weight: 700;
+}
+.navbar-inverse .navbar-brand {
+	color:#ffffff;
+}
+
+.brand-text h1{
+	padding:0;
+	margin:0;
+}
+.navbar-inverse .navbar-nav li a{
+	color:#272626;
+}
+
+.navbar-inverse .navbar-nav li a:hover{
+	color:#f5f5f5;
+	/*font-weight: bold;*/
+}
+.navbar-inverse .navbar-nav .active a, 
+.navbar-inverse .navbar-nav .active a:focus, 
+.navbar-inverse .navbar-nav .active a:hover{
+	color:#ffffff;
+	background-color: transparent; 
+	font-weight: bold;
+	text-transform: uppercase;
+} 
+
+.navbar-nav {
+	    font-size: 17px;
+	}
+.carousel-caption {
+	top:50%;
+	transform:translateY(-50%);
+	text-transform: uppercase;
+
+}
+.carousel-caption h1{
+	font-size: 244%;
+}
+.top-padding{
+	padding-top: 10px;
+	margin-top: 10px;
+}
+.item img{
+	width:100%;
+	max-height: 400px;
+}
+
+.top-btm-padding{
+	padding:35px 0;
+}
+
+.feature{
+	padding:0;
+	position: relative;
+}
+
+.feature img{
+	width:100%;
+}
+.bottom-text {
+	position: absolute;
+	bottom:5%;
+	text-align: center;
+	width:100%;
+	padding:15px;
+}
+
+.folio {
+	width:100%;
+}
+
+.folio img{
+	width:100%;
+}
+
+.price-btn{
+	background-color: #979e0e;
+	color:#ffffff;
+	font-size: 23px;
+	font-weight: bold;
+	margin: 10px;
+}
+
+#products{
+	padding:35px 0;
+}
+
+#products h2{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	font-size: 220%;
+	text-transform: uppercase;
+	color:#979e0e;
+
+}
+
+#products h3{
+	font-weight: bold;
+	
+}
+
+#myCarousel{
+	margin-top: 5.7%;
+}
+
+
+#testimonials{
+	margin-top: 5.7%;
+}
+
+.thumbnail{
+	border-radius: 0;
+}
+.thumbnail:hover {
+   border-color: #13dd80;
+}
+
+.team-man{
+	position: absolute;
+	left:50%;
+	margin-left:-50px;
+	top:-50px;
+	overflow: hidden;
+	min-heigth:100px;
+	min-width: 100px;
+	height:100px;
+	width:100px;
+	border:3px solid #6aaa20;
+	border-radius: 50%;
+}
+
+.team-man img{
+	width:100%;
+	height:100%;
+	min-height: 100%
+	min-width:100%;
+	border-radius: 50%;
+}
+
+.team-block h3{
+	color:#ffffff;
+	font-size:120%;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding-top: 70px;
+	margin-bottom: 5px;
+}
+.team-block span{
+	color:#f5f5f5;
+	font-size: 16px;
+	text-transform: uppercase;
+	letter-spacing: 0.025em;
+}
+
+.team-block p{
+	color:#f5f5f5;
+	font-size: 16px;
+	padding:25px 15px;
+	line-height: 24px;
+	font-weight: 800;
+}
+.team-description{
+	background-color: #979e0e;
+}
+.team-social-network{
+	padding-bottom: 15px;
+}
+
+.team-social-network a{
+	margin: 0 10px;
+}
+
+.team-social-network i{
+	height:40px;
+	width:40px;
+	background:#ffffff;
+	text-align: center;
+	border-radius: 50%;
+	border:3px solid #979e0e;
+	padding-top: 10px;
+}
+
+/*contact us form*/
+
+
+
+/*end of contact us*/
+
+
+
+
+#benefits {
+	padding:35px 0;	
+}
+
+#benefits h2{
+	font-family: 'Raleway', sans-serif;
+	font-size: 200%;
+	font-weight: 300;
+	color: #979e0e;
+}
+
+#benefits p{
+	font-size: 110%;
+    line-height: 25px;
+    font-weight: 300
+}
+
+.know-more{
+	background-color: #979e0e;
+    color: #ffffff;
+    font-size: 18px;
+    margin: 15px 0px;
+}
+
+#greentea-benefits{
+	padding: 35px 0;
+}
+
+.sprite-cat{
+	background: url("../images/benefits/health-sprite.png") 0 0;
+}
+
+.description-cell{
+	position: relative;
+
+}
+.catcchins{
+	background:url("../images/benefits/pharmacy-icons.png")  -400px -181px;
+}
+
+.calories{
+	background:url("../images/benefits/health-sprite.png")  -400px 0px;
+
+}
+
+.cholesterol{
+	background:url("../images/benefits/health-sprite.png")  -200px 0px;	
+}
+.stroke{
+	background:url("../images/benefits/health-sprite.png") -4px 6px;	
+}
+
+.wgt-loss{
+	background:url("../images/benefits/health-sprite.png") -4px 6px;
+}
+
+.gtb{
+	background:url("../images/benefits/health-sprite.png") -4px 6px;
+}
+
+.trivia-icons{
+	margin:0 auto;
+	min-height: 100px;
+	min-width: 100px;
+	height:200px;
+	width:200px;
+	border:1px solid grey;
+	border-radius: 50%;
+}
+.descri{
+	margin-bottom: 8%;
+    margin-top: 10%;
+    text-align: center;
+}
+.jumbotron{
+	/*background-color:#979e0e;*/
+	color:#292927;
+	margin-bottom: 0px;
+}
+
+
+#benefits-intro h2{
+	margin-top: 5.7%;
+	color: #4a4a49;
+	font-size: 3.2em;
+}
+
+/*#benefits-intro h3{
+	font-size: 3.2em;
+	color:#979e0e;
+}*/
+
+#benefits-intro p{
+	font-size: 1.2em;
+	text-align: center;
+	font-weight: 300;
+	line-height: 30px;
+}
+
+#health-benefits{
+	padding: 32px 0px 0px 0px;
+}
+
+#health-benefits h3{
+	font-size: 1.4em;
+	font-weight:300;
+}
+#faq{
+	background:url("../images/Greentea2.jpg");
+	background-size: cover;
+}
+
+#faq h3 {
+    font-size: 3.2em;
+    color: #ffffff;
+}
+
+
+.panel-title > a{
+	color: #1dc8cd;
+    transition: 0.5s;
+}
+
+
+
+.panel-title a.collapse {
+  color: #1dc8cd;
+}
+
+.panel-title a.collapsed {
+  color: #000;
+}
+
+
+.panel-title > a:before {
+    float: right !important;
+    font-family: FontAwesome;
+    content:"\f068";
+    padding-right: 5px;
+}
+.panel-title > a.collapsed:before {
+    float: right !important;
+    content:"\f067";
+}
+.panel-title > a:hover, 
+.panel-title > a:active, 
+.panel-title > a:focus  {
+    text-decoration:none;
+}
+
+.panel-group .panel-heading+.panel-collapse>.list-group, .panel-group .panel-heading+.panel-collapse>.panel-body{
+	border: 0;
+}
+
+.panel{
+	border-bottom: 1px solid black;
+	border-radius: 0;
+}
+
+.panel h4{
+	font-size: 150%;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+}
+
+ .info i {
+    font-size: 32px;
+    color: #979e0e;
+    float: left;
+    line-height: 1;
+}
+
+.info p {
+    padding: 0 0 50px 42px;
+    text-align: left;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+#contact{
+	margin-top: 5.7%;
+    max-height: 600px;
+    height: 600px;
+    background: url(../images/contact_bg.jpg);
+}
+
+#contact h3{
+	padding-top: 0px;
+    font-size: 2.0em;
+    color: #2a2b20;
+}
+
+.contact-tagline {
+	padding: 0px 25px;	
+}
+
+
+
+.contact-about p{
+	text-align: justify;
+}
+.contact-newsletter{
+
+}
+
+.social-links{
+	    padding-bottom: 20px;
+}
+
+.social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #fff;
+    color: #979e0e;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+    border: 1px solid #979e0e;
+}
+
+.social-links a:hover {
+    background: #979e0e;
+    color: #fff;
+}
+
+#contact-footer {
+	/*background-color: #f2f2f2;*/
+	padding: 25px ;
+}
+
+footer p{
+	font-size: 14px;
+	padding:15px 0px;
+	line-height: 25px;
+	
+}
+
+footer h1{
+	padding-top: 0px;
+	font-weight: 300;
+	padding-bottom: 0px;
+
+}
+
+footer .btn-subscribe{
+	color:#ffffff;
+	background-color: #979e0e;
+
+}
+
+.socket{
+	padding:0px 0px;
+	background-color: #696969;
+	color:#ffffff;
+}
+
+#formcontent{
+	padding: 24px;
+    background-color: #ffffff;
+}
+
+#formcontent .form-control{
+	border-radius: 0px; 
+}
+
+#formcontent .btn{
+	border-radius: 0px; 
+    background-color: #979e0e;
+}
+
+
+/*about us*/
+#about{
+	margin-top: 0%;
+	/*background:url("../images/banner1.jpg") no-repeat;*/ 
+	height:7vh;
+	background-size: cover;
+	background-position:0px 0px;
+	position: relative;
+}
+
+/*#about:before{
+	content: "";
+  	position: absolute;
+  	left: 0; 
+  	right: 0;
+  	top: 0; 
+  	bottom: 0;
+	background: rgba(29, 33, 31, 0.5);
+}*/
+
+/*#about h1{
+	position: absolute;
+    right: 26%;
+    top: 0%;
+    font-size: 5.2em;
+    color: #5f5f5c;
+}*/
+
+#start .jumbotron{
+	background-color: transparent;
+	text-align: center;
+	color:#000000;
+}
+
+#start h1{
+	font-size: 2.2em;
+	padding: 20px 0px;
+	color:#979e0e;
+        margin:0px;
+}
+#start .jumbotron p{
+	font-size: 1.0em;
+	padding: 0 18px;
+    line-height: 23px;
+}
+
+#start p {
+    font-size: 1.0em;
+    padding: 0 0px;
+    line-height: 27px;
+    font-weight: 200;
+    text-align: justify;
+}
+
+/*end about us*/
+
+@media (max-width:600px){
+
+	#about{
+		margin-top: 5%;
+	}
+	.carousel-caption{
+		display: none;
+	}
+
+	.brand-text {
+		font-family: 'Dancing Script', cursive;
+		font-size: 150%;
+		font-weight: 700;
+	}
+
+	#myCarousel{
+		margin-top: 15%;
+	}
+
+	#start h1 {
+	    font-size: 1.8em;
+	    padding: 20px 0px;
+	    color: #979e0e;
+	}
+
+	#start .jumbotron p {
+	    font-size: 0.85em;
+	    padding: 0 10px;
+	    line-height: 23px;
+	}
+	
+	#start p{
+		font-size: 0.85em;
+	}
+
+	#benefits-intro h3 {
+	    font-size: 1.8em;
+	}
+
+	#benefits-intro p {
+	    font-size: 0.85em;
+	    text-align: center;
+	    font-weight: 300;
+	    line-height: 25px;
+	}
+
+	#faq h3{
+		font-size: 1.8em;
+	}
+
+	.team-block{
+		margin-bottom: 100px;
+	}
+
+	#contact {
+	    max-height: 1500px;
+	    height: 100%;
+	    
+	}
+	#contact h3 {
+	    padding-top: 0px;
+	    font-size: 1.4em;
+	    color: rgb(42, 43, 32);
+	}
+
+	#contact p{
+    	font-size: 0.85em;
+	}
+
+	#formcontent {
+		margin:25px auto;
+	}
+}
+
+@media (max-width:1080px){
+	.navbar-brand img {
+    max-width: 222px;
+    margin-left: 10px;
+    width: 100%;
+}
+	.carousel-caption{
+		display: none;
+	}
+
+	.brand-text {
+		font-family: 'Dancing Script', cursive;
+		font-size: 150%;
+		font-weight: 700;
+	}
+
+	.navbar-nav {
+	    font-size: 14px;
+	}
+
+	#myCarousel{
+		margin-top: 6%;
+	}
+
+	#about h1 {
+    	top: 56%;
+    	font-size: 2.2em;
+   	}
+
+	#start h1 {
+	    font-size: 1.8em;
+	    padding: 20px 0px;
+	    color: #979e0e;
+	}
+
+	#start .jumbotron p {
+	    font-size: 0.85em;
+	    padding: 0 10px;
+	    line-height: 23px;
+	}
+	
+	#start p{
+		font-size: 0.85em;
+	}
+
+	#benefits-intro h3 {
+	    font-size: 1.8em;
+	}
+
+	#benefits-intro p {
+	    font-size: 0.85em;
+	    text-align: center;
+	    font-weight: 300;
+	    line-height: 25px;
+	}
+
+	#faq h3{
+		font-size: 1.8em;
+	}
+
+	.team-block{
+		margin-bottom: 100px;
+	}
+
+	#contact {
+	    max-height: 1500px;
+	    height: 100%;
+	    
+	}
+	#contact h3 {
+	    padding-top: 0px;
+	    font-size: 1.4em;
+	    color: rgb(42, 43, 32);
+	}
+
+	#contact p{
+    	font-size: 0.85em;
+	}
+
+	#formcontent {
+		margin:25px auto;
+	}
+}
+
+@media (min-width:1370px){
+	#myCarousel, #about {
+	    margin-top: 4.7%;
+	}
+}

@@ -1,103 +1,272 @@
-
 <!DOCTYPE html>
-<html lang=en>
-<meta charset="utf-8">
-	<head>
-	<title>My App and Web Layout</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-			<link rel="stylesheet" type="text/css" href="style.css">
-	</head>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>HOME|UIUX Designer Rashna</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicons -->
+    <link href="img/favicon.png" rel="icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
+
+    <!-- Bootstrap CSS File -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Bootstrap js file -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- Libraries CSS Files -->
+    <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
 
 <body>
-	<main>
+    <header>
+        <!-- nav menu -->
+        <nav class="navbar navbar-inverse" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#MyNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><p class="logo-text text-center"><span class="text-decor">Rashna</span><br> UX UI-Designer</p></a>
+                </div>
+                <div class="collapse navbar-collapse" id="MyNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                       <!--  <li><a href="mywork.html">My Work</a></li>
+                        <li><a href="lproject.html">Projects</a></li> -->
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>          
+        </nav>
+    </header>
 
-		<header class='header'>
-			<div class="logobox"><img src="images/logo.png" width="100px"></div>
-			 <nav class='navbar'>
-				<ul>
-					<li class="active">Home</li>
-					<li>About Us</li>
-					<li>Career</li>
-				</ul>
-			</nav> 
-			<div class="searchbox">Search <input type="text"></div>
-			<div class="banner"><img src="images/banner.png" alt="banner" width="100%" height="auto"></div>
-		</header>
+    <section id="banner" class="home-img">
+        <!-- banner -->
+        <div class="intro-content">
+           <h2>Rashna <span>UX-UI</span><br>Designer</h2>
+            <div>
+               <!-- <a href="liveProj/index.html" class="btn-get-started" target="_blank">Case Study</a>-->
+                <a href="live/index.html" class="btn-projects" target="_blank">Live Project</a>
+            </div>
+        </div>
+    </section>
 
-	<section>
-		<h1>Welcome to our website</h1>
-			<p>This is our website.This is our website.This is our website.This is our website.This is our website.This is our website.This is our website.This is our website.This is our website.This is our website.This is our website.</p>
-			<a href="#" >Read More</a> 
-	</section>
+    <main id="main-section">
+        <section id="about-me">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="images/about-me/profile_pic2.jpg" class="img-responsive">
+                    </div>
+                    <div class="col-md-6 ">
+                        <!-- <h2> UX- UI Designer Rashna</h2> -->
+                        <p>I am a user experience and Front end Designer. </p>
 
-	<section>
-		<h2>Our Services</h2>
-		<div class="service">
-			<div class="float-image">
-				<img src="images/Cypress Vine, Star Glory.jpg" alt="services 1" width="250px" height="255px">
-				<p> This is Red flower</p>
-			</div>		  	
+                        <p class="text-center">I am skilled in </p>
+                        <!-- <ul class="text-center">
+                            <li class='ht'>HTML</li>
+                            <li class='cs'>CSS</li>
+                            <li class='ps'>PHOTOSHOP</li>
+                        </ul> -->
+                        <p class="text-center">HTML, CSS, PHOTOSHOP</p>
+                        <p class="text-center top-margin">I have completed my UX/UI course from <p>
+                        <p  class="text-center"><strong>EDIT Institute, Vashi</strong></p>
+                        
+                        <div class="text-center"><a href="images/rashna.docx" class="btn btn-case btn-sx" type="button" download="">Download Resume</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-			<div class="float-image">
-				<img src="images/Pink.jpg"  alt="services 2" width="250px" height="255px">
-				<p> This is Pink flower</p>
+        <section id='strengths'>
+            <div class="container">
+                <div class="section-header">
+                    <h2>Strengths</h2>
+                    <p> I have the capacity to translate vision into reality. I am self-motivated and always give my 99.9%.  I am for perfection and great at multi-tasking. I am motivated to combine the art of design with the art of programming.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="live-projects">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="images/liveproj/liveimagesweb.jpg">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="project-overview">
+                            <h2>LIVE PROJECT</h2>
+                            <p>Assam Green Tea provides green tea all over the world. They need a responsive website so that they can reach out to more and more people thorough the internet on desktop and mobile devices</p>
+                            <a href="livecasestudy.html" class="btn btn-case">Case Study</a>
+                            <a href="live/index.html" class="btn btn-case">View Live Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="mywork">
+            <div class="container">
+                <div class="section-header">
+                    <h2>My Work</h2>
+                    <p> Implementing visual and interactive elements that users engage with through their web browser when using a web application</p>
+                </div>
+                
+                <div class="row banner-two">
+                    <div class="col-md-4">
+                        <div class="img-box">
+                        	<a href="appdesign.html">
+	                            <img src="images/about-me/mobileapp.jpg">
+	                            <div class="overlay">Mobile App Designing</div>
+                        	</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="img-box">
+                        	<a href="webdesign.html">
+	                            <img src="images/about-me/webdesign-1.jpg">
+	                            <div class="overlay">Web Layout</div>
+                        	</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="img-box">
+                        	<a href="graphicdesign.html">
+	                            <img src="images/about-me/Graphics-Design.png">
+	                            <div class="overlay">Graphic Designing</div>
+                        	</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section id="contact">       
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <i class="fa fa-address-card"></i>
+                        <h3 class="text-center">Address</h3>
+                        <p>Koparkhairane, Navi Mumbai, 400709</p>
+                    </div>
+
+                    <div class="col-md-4 text-center contact-phone">
+                        <i class="fa fa-phone"></i>
+                        <h3 class="text-center">Phone</h3>
+                        <p>+91 845 498 3082</p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <i class="fa fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>rashnasonowal84@gmail.com</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+
+
+	<!-- mobile design -->
+	<div class="modal fade" id="myMobile" role="dialog">
+		<div class="modal-dialog modal-lg">
+		  	<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Mobile Designs</h4>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-4">
+							<img src="images/about-me/mob1.png" class="img-responsive">
+						</div>
+						<div class="col-md-4">
+							<img src="images/about-me/mob2.jpg" class="img-responsive">
+						</div>
+
+						<div class="col-md-4">
+							<img src="images/about-me/mob3_1.jpg" class="img-responsive">
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
 			</div>
+		</div>
+	</div>	
 
-			<div class="float-image">
-				<img src="images/yellow.jpg" alt="services 2" width="250px" height="255px">
-				<p> This is Yellow flower</p>
+	<!-- website design -->
+	<!-- <div class="modal fade" id="myWebsite" role="dialog">
+		<div class="modal-dialog modal-lg">
+		  	
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Website Designs</h4>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-6">
+							<h1>Desktop View</h1>
+							<img src="images/about-me/webpage1.jpg" class="img-responsive">
+						</div>
+						<div class="col-md-6">
+							<h1>Mobile View</h1>
+							<img src="images/about-me/webmobile-view1.jpg" class="img-responsive">
+						</div>
+					</div>
+
+					<div class="row banner-two">
+						<div class="col-md-6">
+							<h1>Desktop View</h1>
+							<img src="images/about-me/webpage2.jpg" class="img-responsive">
+						</div>
+						<div class="col-md-6">
+							<h1>Mobile View</h1>
+							<img src="images/about-me/webmobile-view2.jpg" class="img-responsive">
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
 			</div>
-
-			<div class="float-image">
-				<img src="images/rose-1450619_960_720.jpg" alt="services 2" width="250px" height="255px">
-				<p>This is Rose</p>
-			</div>
-	   </div>
-
-	   
-	   		<h3>Our Client</h3>
-	   		<div class="bigbox">
-	   			<div class="Clientname1">
-	   				<img src="images/Female.jpg" alt="Clientname1" width="124px" class="client-image">
-	   				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-	   			</div>
-	   			<div class="Clientname2">
-	   				<img src="images/Gentleman.png" alt="Clientname1" width="124px" class="client-image">
-	   				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-	   			</div>
-	   		</div>
-	   
-	</section>
-	<section class="news">
-			
-			<p>
-				<input type="checkbox"><a href="go.html">Go</a>Suscribe For Our Newsletter
-			</p>
-	</section>
-		
-	<footer>
-		
-		<div class="ad">
-			Reach Us
-			<p>Address: 701, 7th Floor, Real Tech Park,<br> Plot No. 39/2, Above LG Showroom, Sector 30A, Vashi,<br> Navi Mumbai, Maharashtra 400703</p>
 		</div>
+	</div>	 -->
 
-		<div class="con">
-			Contect Us<br>
-			<p>Phone: 098204 00648</p>
-		</div>
 
-		<div class="Soci">
-			<p>Follow Us</p>
-		   <a href="#"><img src="images/fb.png" width='50px' height='50px' /></a>
-		   <a href="#"><img src="images/google.png" width='50px' height='50px' /></a>
-		   <a href="#"><img src="images/twitter.png" width='50px' height='50px' /></a>
-		</div>
-	
-	</footer>
-		
-	</main>
+    <footer id='footer'>
+        <div class="container">
+            <div class="copyright text-center">
+                &copy; Copyright <strong>UI Designer Rashna</strong>. All Rights Reserved
+            </div>
+        </div>
+    </footer>
+
+    
 
 
 </body>
 
+</html>
